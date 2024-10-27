@@ -1,0 +1,32 @@
+/* Styles for jeco-bootstrap-accordion block */
+@use "../../scss/breakpoints";
+
+// Import Bootstrap variables and functions first
+@import "node_modules/bootstrap/scss/functions";
+@import "node_modules/bootstrap/scss/variables";
+@import "node_modules/bootstrap/scss/mixins"; // Import mixins if needed
+
+// Now import the Accordion styles and any other needed components
+@import "node_modules/bootstrap/scss/accordion";
+@import "node_modules/bootstrap/scss/buttons"; // If you're using Bootstrap buttons
+
+.jeco-bootstrap-accordion {
+
+  /* Additional styles to ensure proper functionality */
+  .accordion-button {
+    background-color: #f8f9fa; // Change as needed
+  }
+
+  .accordion-button:not(.collapsed) {
+    color: #0d6efd; // Change as needed
+    background-color: #e9ecef; // Change as needed
+  }
+
+  .accordion-collapse {
+    display: none; // Ensure that collapse works
+  }
+
+  .accordion-collapse.show {
+    display: block; // Show when active
+  }
+}

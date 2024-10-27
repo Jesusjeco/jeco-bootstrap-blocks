@@ -1,0 +1,12 @@
+/* Styles for jeco-bootstrap-accordion block */
+@use "../../scss/breakpoints";
+
+// Import Bootstrap variables and functions first
+@import "node_modules/bootstrap/scss/functions"; 
+@import "node_modules/bootstrap/scss/variables";
+@import "node_modules/bootstrap/scss/mixins"; // Import mixins if needed
+
+// Now import the Accordion styles
+@import "node_modules/bootstrap/scss/accordion";
+
+.jeco-bootstrap-accordion {} 
